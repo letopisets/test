@@ -1,0 +1,331 @@
+/* CSS reset */
+
+
+body{
+    background-color: white;
+    width: 100%;
+}
+/*wrapp  */
+.wrapper{
+    background-color: #f6f6f6; 
+    width: 640px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+.wrapper_pages{
+    width: 75%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*  */
+nav, main, .header_wrap{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+/* header */
+.header_wrap{
+    background-color: black;
+    height: 75px;
+}
+.logo_wrap{
+    width: 35%;
+    position: static;
+    margin-right: auto;
+    margin-left: auto;
+}
+.logo{
+    display: block; 
+    margin-top: 10px;
+    float: left;
+}
+.logo_text{
+    display: block;
+    margin-left: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    top: 25px;
+}
+
+/* Navigation */
+nav{
+    background-color: #f6f6f6; 
+    height: 50px;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: -10px;
+}
+nav>ul{
+    width: 100%;
+    padding: 0px;
+    margin-left: 0px;
+}
+nav>ul>li.nav_item{
+    display: inline-block;
+    width: 24%;
+
+}
+.nav_item>a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+}
+nav>ul>li>a:hover{
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration-color: chartreuse;
+}
+
+/* main */
+main{
+    height: auto;
+}
+.content_1{
+    background-color: rgb(241, 227, 215);
+    height: 245px;
+}
+.image{
+    height: 245px;
+}
+.block1, .block2, .block3{
+    display: inline-block;
+}
+.block1{
+    float: left;
+}
+
+.block2{
+    margin-top: 50px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.block2,.block3{
+    margin-left: 10px;
+}
+.block2>h2{
+    text-align: center;
+}
+.block3{
+    float: right;
+}
+
+.content_2{
+    background-color: rgb(235, 235, 235);
+    height: 200px;
+    width: 100%;
+    padding-top: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+.content2_text{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.link_color{
+    color: black;
+}
+
+
+.fragment3{
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    width: 100%;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+.block_fragment3{
+    position: absolute;
+    display: inline-block;
+    width: 70%;
+    margin-left: 150px;
+}
+.text3{
+    position: absolute;
+    display: inline-block;
+    text-align: right;
+    width: 25%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.img_fragment3{
+    /* width: 75%;  */
+    height: 300px;
+    float: right;
+}
+
+
+
+
+
+/*    adaptive for mobile screen    */
+
+@media screen and (max-width: 360px){
+    .wrapper{
+        background-color: #f6f6f6; 
+        width: 360px;
+        height: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+    }
+    .wrapper_pages{
+        width: 100%;
+        height: auto;
+    }
+    
+    /*  */
+    nav, main, .header_wrap{
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    
+    /* header */
+    .header_wrap{
+        background-color: black;
+        height: 75px;
+    }
+    .logo_wrap{
+        width: 35%;
+        position: static;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .logo{
+        display: block; 
+        margin-top: 10px;
+        float: left;
+    }
+    .logo_text{
+        display: block;
+        margin-left: 70px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        top: 25px;
+    }
+    
+    /* Navigation */
+    nav{
+        background-color: #f6f6f6; 
+        height: 35px;
+        padding: 0px;
+        margin-left: 0px;
+        margin-top: -10px;
+    }
+    nav ul{
+        width: 100%;
+        padding: 0px;
+        margin-left: 0px;
+    }
+    nav>ul>li.nav_item{
+        display: inline-block;
+        width: 22%;
+    }
+    .nav_item>a{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.2rem;
+        color: black;
+        text-decoration: none;
+        font-weight: normal;
+    }
+    nav>ul>li>a:hover{
+        font-weight: bold;
+    }
+    
+    /* main */
+    main{
+        height: auto;
+       
+    }
+    .content_1{
+        position: absolute;
+        background-color: rgb(241, 227, 215);
+        height: 800px;
+        width: 100%;
+        margin-top:10px;
+    }
+    .image{
+        height: 245px;
+    }
+    .block1, .block3{ 
+        display: block;
+    }
+    .block1{
+        position: relative;
+        margin-left: 25%;
+        margin-right: 25%;
+    } 
+    .block2{
+        margin-top: -15px;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+ 
+    .block2>h2{
+        text-align: center;
+    }
+    .block3{
+        margin-left: 25%;
+        margin-right: 25%;
+    } 
+
+    /* chast 2 */
+    .content_2{
+        background-color: rgb(235, 235, 235);
+        position: absolute;
+        height: 200px;
+        width: 100%;
+        padding-top: 10px;
+        margin-top: 820px;
+        text-align: center;
+    }
+    .content2_text{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .link_color{
+        color: black;
+    }
+    .fragment3{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    width: 100%;
+    padding-top: 10px;
+    top: 1020px;
+}
+.block_fragment3{
+    position: absolute;
+    display: inline-block;
+    width: 70%;
+    margin-left: 150px;
+}
+.text3{
+    position: absolute;
+    display: inline-block;
+    text-align: right;
+    width: 25%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.img_fragment3{
+    /* width: 75%;  */
+    height: 250px;
+    float: right;
+    }
+}
